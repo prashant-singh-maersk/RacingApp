@@ -57,6 +57,7 @@ function App() {
                 <p>{t('title')}</p>
             </div>
             <p className='read-the-docs'>{t('description')}</p>
+            <p>new content</p>
         </>
     )
 }
