@@ -6,19 +6,13 @@ import './App.scss'
 function App() {
     return (
         <div className='app'>
-            <BrowserRouter>
+            <BrowserRouter basename='/RacingApp'>
                 <Header />
                 <main>
                     <Routes>
                         {route.map((item) => {
-                            const { path, name, element: Element } = item
-                            return (
-                                <Route
-                                    path={path}
-                                    key={name}
-                                    element={<Element />}
-                                />
-                            )
+                            const { path, element: Element } = item
+                            return <Route path={path} element={<Element />} />
                         })}
                     </Routes>
                 </main>
