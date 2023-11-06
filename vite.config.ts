@@ -20,7 +20,7 @@ export default defineConfig({
         VitePWA({
             registerType: 'autoUpdate',
             workbox: {
-                globPatterns: ['**/*.{js,css,ico,png,svg,jpg,jpeg}'],
+                globPatterns: ['**/*.{js,css,html,ico,png,svg,jpg,jpeg}'],
             },
             manifest: {
                 name: 'Racing Company',
