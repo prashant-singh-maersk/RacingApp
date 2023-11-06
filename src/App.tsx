@@ -8,8 +8,8 @@ import { route } from './router/route'
 function App() {
     return (
         <div className='app'>
-            <Header />
             <BrowserRouter>
+                <Header />
                 <main>
                     <Routes>
                         {route.map((item) => {

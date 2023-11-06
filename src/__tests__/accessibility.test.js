@@ -5,7 +5,7 @@ import '@testing-library/jest-dom'
 import App from '../App'
 
 expect.extend(toHaveNoViolations)
-test('loads and displays greeting', async () => {
+test('accessibility test', async () => {
     const { container } = render(<App />)
     const results = await axe(container)
     expect(results).toHaveNoViolations()

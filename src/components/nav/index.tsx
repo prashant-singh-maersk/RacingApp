@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/index.scss'
 import { route } from '../../router/route'
+import { Link } from 'react-router-dom'
 
 const Navigation: React.FC = () => {
     return (
@@ -12,7 +13,7 @@ const Navigation: React.FC = () => {
                     {route.map(({ path, name }, index: number) => {
                         return (
                             <li className='nav-items' key={index}>
-                                <a href={path}>{name}</a>
+                                <Link to={path}>{name}</Link>
                             </li>
                         )
                     })}
