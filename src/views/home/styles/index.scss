@@ -1,0 +1,28 @@
+.home {
+  height: calc(100vh - 80px);
+  position: relative;
+
+  .title {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+  }
+
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../../../assets/racing_car.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #00000082;
+    background-blend-mode: color;
+  }
+}
